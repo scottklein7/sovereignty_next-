@@ -11,8 +11,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-white text-6xl font-serif">Coming Soon!</h1>
         <Image src="/sovlogo.png" alt="Vercel Logo" width={600} height={300} />
+        <h1 className="text-white mt-20 text-5xl font-serif">Coming Soon!</h1>
 
       </main>
 

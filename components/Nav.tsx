@@ -90,36 +90,36 @@ export function Nav() {
     const { classes } = useStyles();
 
     const items = links2.map((link) => {
-        const menuItems = link.links?.map((item) => (
-            <Link key={item.link} href={item.link}>
-                <Menu.Item><a href={item.link}>{item.label}</a></Menu.Item>
-            </Link>
-        ))
 
-        if (menuItems) {
-            return (
-                <Menu
-                    key={link.label}
-                    trigger="hover"
-                    delay={0}
-                    transitionDuration={200}
-                    placement="end"
-                    gutter={1}
-                    control={
-                        <a
-                            className={classes.link}
-                            onClick={(event) => event.preventDefault()}
-                        >
-                            <Center>
-                                <span className={classes.linkLabel}>{link.label}</span>
-                            </Center>
-                        </a>
-                    }
-                >
-                        {menuItems}
-                </Menu>
-            )
-        }
+            <Link key={link.link} href={link.link}>
+                <Menu.Item><a href={link.link}>{link.label}</a></Menu.Item>
+            </Link>
+
+
+        // if (menuItems) {
+        //     return (
+        //         <Menu
+        //             key={link.label}
+        //             trigger="hover"
+        //             delay={0}
+        //             transitionDuration={200}
+        //             placement="end"
+        //             gutter={1}
+        //             control={
+        //                 <a
+        //                     className={classes.link}
+        //                     onClick={(event) => event.preventDefault()}
+        //                 >
+        //                     <Center>
+        //                         <span className={classes.linkLabel}>{link.label}</span>
+        //                     </Center>
+        //                 </a>
+        //             }
+        //         >
+        //                 {menuItems}
+        //         </Menu>
+        //     )
+        // }
 
         return (
             <Link key={link.label} href={link.link!}>

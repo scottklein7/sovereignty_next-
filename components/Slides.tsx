@@ -2,14 +2,16 @@ import { Fade as Fade2 } from 'react-awesome-reveal';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
+import field from '../public/assets/field.png'
+
 const slideImages = [
   {
-    url: 'https://user-images.githubusercontent.com/81238878/153029428-2ee0132e-1eb5-48ed-a506-e624e060eb29.png',
-    caption: 'This is our farm do you like it?'
+    url: 'https://user-images.githubusercontent.com/81238878/202779765-35882aa6-cdaf-4208-88e5-c4cf4a74f307.jpeg',
+    caption: 'This is our farm from the top of our hill!'
   },
   {
-    url: 'https://user-images.githubusercontent.com/81238878/153029428-2ee0132e-1eb5-48ed-a506-e624e060eb29.png',
-    caption: 'Hey whats up this is the farm bro'
+    url: 'https://user-images.githubusercontent.com/81238878/202780591-edd87b7c-f767-4c7e-a898-6534ca42e182.jpeg',
+    caption: 'Our spring flower bloom'
   },
   {
     url: 'https://user-images.githubusercontent.com/81238878/153029428-2ee0132e-1eb5-48ed-a506-e624e060eb29.png',

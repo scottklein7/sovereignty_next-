@@ -73,16 +73,16 @@ interface Props {
 const links2 = [
     { label: "Blog", link: "/blog" },
     { label: "Contact", link: "/contact" },
-    {
-        label: "Animals",
-        initiallyOpened: false,
-        links:
-            [
-                { label: "Cattle", link: "/animals/cattle" },
-                { label: "Chicken", link: "/animals/chicken" },
-                { label: "Sheep", link: "/animals/sheep" },
-            ],
-    },
+    // {
+    //     label: "Animals",
+    //     initiallyOpened: false,
+    //     links:
+    //         [
+    //             { label: "Cattle", link: "/animals/cattle" },
+    //             { label: "Chicken", link: "/animals/chicken" },
+    //             { label: "Sheep", link: "/animals/sheep" },
+    //         ],
+    // },
 ]
 
 export function Nav() {

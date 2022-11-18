@@ -2,8 +2,8 @@ import { useEffect, useState, useCallback } from 'react'
 import { sanityClient, imgUrl } from '../sanity'
 import Head from 'next/head'
 import { Nav } from '../components/Nav'
-import AnimalsMobile from '../components/AnimalsMobile'
-import AnimalsWeb from '../components/AnimalsWeb'
+// import AnimalsMobile from '../components/AnimalsMobile'
+// import AnimalsWeb from '../components/AnimalsWeb'
 import Slides from '../components/Slides'
 import Footer from '../components/Footer'
 import { Fade } from "react-awesome-reveal"
@@ -60,14 +60,14 @@ export default function index({ posts }: Props) {
         <section>
           <Slides />
         </section>
-        <section className="p-5 flex flex-col justify-center bg-sky-100 font-serif">
+        {/* <section className="p-5 flex flex-col justify-center bg-sky-100 font-serif">
           <h2 className="mt-10 text-center font-extrabold text-4xl md:text-5xl">Our Animals</h2>
           {isBreakpoint ? (
             <AnimalsMobile />
           ) : (
             <AnimalsWeb />
           )}
-        </section>
+        </section> */}
         <section className="p-5 flex flex-col justify-center bg-blue-100 font-serif">
           <Fade damping={1300} triggerOnce>
             <h2 className="text-center font-extrabold text-4xl md:text-5xl">Our Story</h2>

@@ -3,8 +3,14 @@ import Image from 'next/image';
 import React from 'react'
 import { Nav } from '../components/Nav';
 import { sanityClient, imgUrl } from '../sanity'
+import { weddingImages, weddingImage } from '../typings';
 
-const weddingphotos = ({ images }: any) => {
+interface Props {
+    weddingImages: weddingImages
+}
+
+const weddingphotos = ({ weddingImages }: Props) => {
+    console.log(weddingImages)
     return (
         <div className="h-screen">
             <Head>
@@ -14,7 +20,7 @@ const weddingphotos = ({ images }: any) => {
             <main className="bg-sky-200 my-16 h-screen flex-col">
                 <h1 className="text-center font-bold text-3xl text-white drop-shadow-lg p-5">Our Wedding Venue</h1>
                 <section className="grid grid-cols-1 sm:grid-cols-4 gap-2 mt-8">
-                    {images?.images.map((image) => (
+                    {weddingImages?.images.map((image: weddingImage) => (
                         <div key={image._key} className="mx-5 sm:mx-1 aspect-w-1 aspect-h-1 bg-sky-200 rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                             <Image
                                 {...imgUrl(image.asset._ref)}
@@ -43,11 +49,11 @@ export const getServerSideProps = async () => {
         images,
       }`
 
-    const images = await sanityClient.fetch(query)
+    const weddingImages = await sanityClient.fetch(query)
 
     return {
         props: {
-            images
+            weddingImages
         }
     }
 }

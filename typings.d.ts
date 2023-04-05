@@ -19,3 +19,18 @@ export interface Post {
     body: [object]
 }
 
+type weddingImage = {
+    _key: string;
+    _type: string;
+    asset: {
+        _ref: string;
+        _type: string
+    };
+    caption: string;
+}
+
+export interface weddingImages {
+    _id: string,
+    images: Array<weddingImage>,
+    title: string,
+}

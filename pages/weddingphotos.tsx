@@ -23,6 +23,7 @@ const weddingphotos = ({ weddingImages }: Props) => {
                     {weddingImages?.images.map((image: weddingImage) => (
                         <div key={image._key} className="mx-5 sm:mx-1 aspect-w-1 aspect-h-1 bg-sky-200 rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                             <Image
+                            //@ts-ignore
                                 {...imgUrl(image.asset._ref)}
                                 height={700}
                                 width={700}

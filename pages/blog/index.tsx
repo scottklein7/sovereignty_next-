@@ -27,6 +27,7 @@ export default function index({ posts }: Props) {
                                     <div className="cursor-pointer flex flex-col max-w-5xl">
                                         {post.mainImage && (
                                             <Image
+                                                //@ts-ignore
                                                 {...imgUrl(post.mainImage)}
                                                 height={350}
                                                 width={750}
@@ -41,6 +42,7 @@ export default function index({ posts }: Props) {
                                                 <div className="flex items-center space-x-3">
                                                     {post.author.image && (
                                                         <Image
+                                                            //@ts-ignore
                                                             {...imgUrl(post.author.image)}
                                                             height={50}
                                                             width={50}

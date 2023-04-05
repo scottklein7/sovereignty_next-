@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { createStyles, Header, Menu, Group, Center, Burger, Container, Transition, Paper } from '@mantine/core';
-import { useToggle } from '@mantine/hooks';
+import { createStyles, Header, Menu, Group, Burger, Container, Transition, Paper } from '@mantine/core';
 import Image from 'next/image'
 import Link from 'next/link'
 

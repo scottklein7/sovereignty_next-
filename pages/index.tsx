@@ -11,6 +11,7 @@ import { Post } from '../typings'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 const fcp = "/assets/main.png"
 
 
@@ -67,6 +68,9 @@ export default function index({ posts }: Props) {
           ) : (
             <AnimalsWeb />
           )}
+        </section> */}
+        {/* <section>
+          <DateP />
         </section> */}
         <section className="p-5 flex flex-col justify-center bg-blue-100 font-serif">
           <Fade damping={1300} triggerOnce>

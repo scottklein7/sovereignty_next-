@@ -6,9 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mantine/core": "^4.1.5",
-    "@mantine/hooks": "^4.1.5",
-    "@mantine/next": "^4.1.5",
+    "@mantine/core": "^5.9.2",
+    "@mantine/dates": "^5.9.2",
+    "@mantine/hooks": "^5.9.2",
+    "@mantine/next": "^5.9.2",
+    "dayjs": "^1.11.6",
     "next": "latest",
     "next-sanity": "^0.5.2",
     "next-sanity-image": "^3.2.1",

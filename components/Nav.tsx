@@ -1,6 +1,6 @@
-import React from 'react';
-import { createStyles, Header, Menu, Group, Center, Burger, Container, Transition, Paper, Anchor, MenuItem } from '@mantine/core';
-import { useBooleanToggle } from '@mantine/hooks';
+import React, { useState } from 'react';
+import { createStyles, Header, Menu, Group, Center, Burger, Container, Transition, Paper } from '@mantine/core';
+import { useToggle } from '@mantine/hooks';
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -73,6 +73,8 @@ interface Props {
 const links2 = [
     { label: "Blog", link: "/blog" },
     { label: "Contact", link: "/contact" },
+    { label: "Wedding Photos", link: "/weddingphotos"},
+    { label: "Wedding Consults", link: "https://calendly.com/sovereigntyfarms/wedding-venue-meeting?month=2023-01", target: "blank" }
     // {
     //     label: "Animals",
     //     initiallyOpened: false,
@@ -86,14 +88,14 @@ const links2 = [
 ]
 
 export function Nav() {
-    const [opened, toggleOpened] = useBooleanToggle(false);
+    const [opened, toggleOpened] = useState(false);
     const { classes } = useStyles();
 
     const items = links2.map((link) => {
 
-            <Link key={link.link} href={link.link}>
-                <Menu.Item><a href={link.link}>{link.label}</a></Menu.Item>
-            </Link>
+        <Link key={link.link} href={link.link}>
+            <Menu.Item><a href={link.link}>{link.label}</a></Menu.Item>
+        </Link>
 
 
         // if (menuItems) {
@@ -124,6 +126,7 @@ export function Nav() {
         return (
             <Link key={link.label} href={link.link!}>
                 <a
+                    target={link.label === 'Wedding Consults' ? "_blank" : ""}
                     className={classes.link}
                 >
                     {link.label}
@@ -151,7 +154,7 @@ export function Nav() {
                     </Group>
                     <Burger
                         opened={opened}
-                        onClick={() => toggleOpened()}
+                        onClick={() => toggleOpened(!opened)}
                         className={classes.burger}
                         size="sm"
                         color="#fff"
@@ -168,3 +171,7 @@ export function Nav() {
         </Header>
     )
 }
+function useBooleanToggle(arg0: boolean): [any, any] {
+    throw new Error('Function not implemented.');
+}
+

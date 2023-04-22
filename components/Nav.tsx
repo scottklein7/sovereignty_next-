@@ -72,18 +72,8 @@ interface Props {
 const links2 = [
     { label: "Blog", link: "/blog" },
     { label: "Contact", link: "/contact" },
-    { label: "Wedding Photos", link: "/weddingphotos"},
+    { label: "Wedding Photos", link: "/weddingphotos" },
     { label: "Wedding Consults", link: "https://calendly.com/sovereigntyfarms/wedding-venue-meeting?month=2023-01", target: "blank" }
-    // {
-    //     label: "Animals",
-    //     initiallyOpened: false,
-    //     links:
-    //         [
-    //             { label: "Cattle", link: "/animals/cattle" },
-    //             { label: "Chicken", link: "/animals/chicken" },
-    //             { label: "Sheep", link: "/animals/sheep" },
-    //         ],
-    // },
 ]
 
 export function Nav() {
@@ -97,30 +87,6 @@ export function Nav() {
         </Link>
 
 
-        // if (menuItems) {
-        //     return (
-        //         <Menu
-        //             key={link.label}
-        //             trigger="hover"
-        //             delay={0}
-        //             transitionDuration={200}
-        //             placement="end"
-        //             gutter={1}
-        //             control={
-        //                 <a
-        //                     className={classes.link}
-        //                     onClick={(event) => event.preventDefault()}
-        //                 >
-        //                     <Center>
-        //                         <span className={classes.linkLabel}>{link.label}</span>
-        //                     </Center>
-        //                 </a>
-        //             }
-        //         >
-        //                 {menuItems}
-        //         </Menu>
-        //     )
-        // }
 
         return (
             <Link key={link.label} href={link.link!}>

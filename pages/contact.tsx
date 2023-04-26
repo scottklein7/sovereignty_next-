@@ -1,4 +1,5 @@
 
+import Footer from "../components/Footer"
 import { Nav } from "../components/Nav"
 
 function contact() {
@@ -42,6 +43,7 @@ function contact() {
                     </p>
                 </form>
             </div>
+            <Footer />
         </>
     )
 }

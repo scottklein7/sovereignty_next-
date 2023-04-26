@@ -5,6 +5,7 @@ import { weddingImage, weddingImages } from '../../typings'
 import Image from 'next/image'
 import Head from 'next/head'
 import { Nav } from '../../components/Nav'
+import Footer from '../../components/Footer'
 
 interface Props {
   img: [weddingImage]
@@ -16,21 +17,24 @@ function weddingImage({ img }: Props) {
   })
 
   return (
-    <div className="bg-sky-200" style={{ height: "100vh" }}>
-      <Head>
-        <title>Wedding Photos for Sov Farms</title>
-      </Head>
-      <Nav />
-      <main className="bg-sky-200">
-        <Image
-          //@ts-ignore
-          {...imgUrl(jeff[0])}
-          alt="Weeding Photo Image"
-          className="h-full w-full"
-        />
-      </main>
-    </div>
+    <>
+      <div className="bg-sky-200" style={{ height: "100vh" }}>
+        <Head>
+          <title>Wedding Photos for Sov Farms</title>
+        </Head>
+        <Nav />
+        <main className="bg-sky-200">
+          <Image
+            //@ts-ignore
+            {...imgUrl(jeff[0])}
+            alt="Weeding Photo Image"
+            className="h-full w-full"
+          />
+        </main>
 
+      </div>
+      <Footer />
+    </>
   )
 }
 

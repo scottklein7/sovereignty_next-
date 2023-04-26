@@ -5,6 +5,7 @@ import { Nav } from '../../components/Nav';
 import { sanityClient, imgUrl } from '../../sanity'
 import { weddingImages, weddingImage } from '../../typings';
 import Link from 'next/link';
+import Footer from '../../components/Footer';
 
 interface Props {
     weddingImages: weddingImages
@@ -36,7 +37,7 @@ const weddingphotos = ({ weddingImages }: Props) => {
                     ))}
                 </section>
             </main>
-
+            <Footer />
         </div>
     );
 

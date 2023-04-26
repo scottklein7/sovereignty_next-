@@ -5,6 +5,7 @@ import { Fade } from "react-awesome-reveal"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Post } from "../../typings"
+import Footer from "../../components/Footer"
 
 interface Props {
     posts: [Post]
@@ -63,6 +64,7 @@ export default function index({ posts }: Props) {
                     </Fade>
                 </section>
             </main>
+            <Footer />
         </>
     )
 }

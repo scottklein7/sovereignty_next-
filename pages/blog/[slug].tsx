@@ -5,6 +5,7 @@ import { Post } from "../../typings"
 import PortableText from 'react-portable-text'
 import { Nav } from '../../components/Nav';
 import Image from 'next/image';
+import Footer from '../../components/Footer';
 
 interface Props {
     post: Post
@@ -64,6 +65,7 @@ export default function post({ post }: Props) {
                     </article>
                 </main>
             </main>
+            <Footer />
         </>
     )
 }

@@ -17,7 +17,7 @@ const weddingphotos = ({ weddingImages }: Props) => {
                 <title>Wedding Photos for Sov Farms</title>
             </Head>
             <Nav />
-            <main className="bg-sky-200 mt-16 flex-col w-screen h-screen">
+            <main className="bg-sky-200 mt-16 flex-col w-screen min-h-screen">
                 <h1 className="text-center font-bold text-3xl text-white drop-shadow-lg p-10">Our Wedding Venue</h1>
                 <section className="grid grid-cols-1 sm:grid-cols-4 ">
                     {weddingImages?.images?.map((image: weddingImage, idx) => (

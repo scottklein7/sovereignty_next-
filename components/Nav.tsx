@@ -116,7 +116,7 @@ export function Nav() {
                                 </a>
                             </Link>
                         </h1>
-                        <Group spacing={5} className={classes.links}>
+                        <Group spacing={5} className={`${classes.links} cinzel`}>
                             {items}
                         </Group>
                         <Burger

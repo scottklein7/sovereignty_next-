@@ -2,8 +2,6 @@ import { useEffect, useState, useCallback } from 'react'
 import { sanityClient, imgUrl } from '../sanity'
 import Head from 'next/head'
 import { Nav } from '../components/Nav'
-// import AnimalsMobile from '../components/AnimalsMobile'
-// import AnimalsWeb from '../components/AnimalsWeb'
 import Slides from '../components/Slides'
 import Footer from '../components/Footer'
 import { Fade } from "react-awesome-reveal"
@@ -61,28 +59,86 @@ export default function index({ posts }: Props) {
         <section>
           <Slides />
         </section>
-        {/* <section className="p-5 flex flex-col justify-center bg-sky-100 font-serif">
-          <h2 className="mt-10 text-center font-extrabold text-4xl md:text-5xl">Our Animals</h2>
-          {isBreakpoint ? (
-            <AnimalsMobile />
-          ) : (
-            <AnimalsWeb />
-          )}
-        </section> */}
-        {/* <section>
-          <DateP />
-        </section> */}
-        <section className="p-5 flex flex-col justify-center bg-blue-100 font-serif">
-          <Fade damping={1300} triggerOnce>
-            <h2 className="text-center font-extrabold text-4xl md:text-5xl">Our Story</h2>
-            <article>
-              <div className="flex flex-col gap-5 p-10 md:px-48 text-xl">
-                <p>Sovereignty Farms was  not only purchased for the purpose of finding peace in the beautiful county in the Shenandoah Valley of Virginia, but also was to provide us a way to connect with and raise and grow our own food.  It has been an interesting endeavor as we strive to know more about our food and more importantly about where our food comes from.  As a family, God has  blessed us with thia opportunity to become independent of the corporate food network, and to grow and raise our own food.  It is our hope and goal to slowly grow our farm and share its goodness with our family, friends, and many more.</p>
-                <p>The move to organic and healthy foods really comes from what we have learned about the origin of some food products, and frankly because our food simply doesn’t have any taste like it did growing up.    Once you have eaten organic and responsibly raised meat, eggs, fruits and vegetables, you simply will not go back to mass produced bland food.  We know it will be delicious and taste absolutely as we remembered when growing up, and be definitely be healthier for you.</p>
-                <p>There is nothing more satisfying than growing and raising your own food. Second to that is enjoying your fellow farmer’s goodies.  We look forward to the journey that has been laid before us and making many new friends and sharing our farm with you.</p>
+        <section className='p-10 md:hidden w-full' style={{ backgroundImage: 'url("/barn.jpeg")', backgroundSize: 'cover' }}>
+          <div className="bg-[#292A2C] bg-opacity-80 flex flex-col justify-center items-center p-2">
+            <div className='text-white flex flex-col gap-10 text-center border-2 w-full text-xl'>
+              <span className='font-nanum-brush text-3xl'>Sovereignty Barn</span>
+              <span className='font-cinzel flex justify-center italic font-extrabold text-xl'>
+                Where Couples become Families
+              </span>
+              <span className='font-nanum-brush cursive text-3xl'>Located In beautiful Mount Jackson Virginia</span>
+            </div>
+          </div>
+        </section>
+
+
+        <section className='flex flex-col md:flex-row font-cinzel'>
+          <div className='w-full md:w-1/2'>
+            <div className='relative h-0' style={{ paddingBottom: '56.25%' }}>
+              <Image
+                src="/event.webp"
+                alt="Event Image"
+                className='object-cover absolute inset-0'
+                layout='fill'
+              />
+              <div className='absolute inset-0 flex justify-center items-center'>
+                <button className='font-extrabold bg-white bg-opacity-70 hover:bg-opacity-30 hover:bg-black hover:text-white px-6 py-3 shadow-md rounded transition-colors duration-300'>Barn Events</button>
               </div>
-            </article>
-          </Fade>
+            </div>
+          </div>
+          <div className='w-full md:w-1/2'>
+            <div className='relative h-0' style={{ paddingBottom: '56.25%' }}>
+              <Image
+                src="/arbor.webp"
+                alt="Wedding Image"
+                className='object-cover absolute inset-0'
+                layout='fill'
+              />
+              <div className='absolute inset-0 flex justify-center items-center'>
+                <button className='font-extrabold bg-white bg-opacity-70 hover:bg-opacity-30 hover:bg-black hover:text-white px-6 py-3 shadow-md rounded transition-colors duration-300'>Weddings</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="p-10 flex justify-center" style={{ backgroundImage: 'url("/weddingimg.webp")', backgroundSize: 'cover' }}>
+          <div className="bg-black bg-opacity-40 p-5 rounded-md font-cinzel">
+            <div className="flex flex-col p-10 gap-5 md:text-center text-white">
+              <h1 className="font-bold text-4xl text-center">Contact Us</h1>
+              <p className="text-2xl font-bold">Curious about our farm? Want to visit? Have a question about our products?</p>
+            </div>
+            <div className="">
+              <form className="flex flex-col font-white gap-5" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                  <label>
+                    Don’t fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </p>
+                <p>
+                  <label className="block text-white font-bold" htmlFor="yourname">
+                    Your Name:
+                  </label>
+                  <input className="font-cinzel shadow-sm border border-gray-300 rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring" required={true} type="text" name="name" id="yourname" placeholder="John Doe" />
+                </p>
+                <p>
+                  <label className="block text-white font-bold" htmlFor="youremail">
+                    Your Email:
+                  </label>
+                  <input className="font-cinzel shadow-sm border border-gray-300 rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring" name="email" required={true} type="email" id="youremail" placeholder="robert@sovfarms.com" />
+                </p>
+                <p>
+                  <label className="block text-white font-bold" htmlFor="yourmessage">
+                    What can we do for you?
+                  </label>
+                  <textarea className="font-cinzel shadow-sm border border-gray-300 rounded py-2 px-3 mt-1 block w-full form-textarea outline-none required focus:ring" name="message" id="yourmessage" placeholder="I would love to visit your farm!"></textarea>
+                </p>
+                <p className="mt-3">
+                  <button className="w-full shadow bg-emerald-400 hover:bg-emerald-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded cursor-pointer" type="submit">Send</button>
+                </p>
+              </form>
+            </div>
+          </div>
         </section>
 
         <section className="font-serif p-5 flex flex-col items-center bg-green-100">
@@ -93,14 +149,14 @@ export default function index({ posts }: Props) {
                 <Link key={post._id} href={`/blog/${post.slug.current}`}>
                   <div className="cursor-pointer flex flex-col max-w-5xl">
                     {post.mainImage && (
-                        <Image
-                          {...imgUrl(post.mainImage)}
-                          height={350}
-                          width={750}
-                          objectFit="cover"
-                          className="shadow-lg"
-                          alt="blog preview image"
-                        />
+                      <Image
+                        {...imgUrl(post.mainImage)}
+                        height={350}
+                        width={750}
+                        objectFit="cover"
+                        className="shadow-lg"
+                        alt="blog preview image"
+                      />
                     )}
                     <div className="flex ml-3 mt-3">
                       <div className="flex flex-col gap-4">

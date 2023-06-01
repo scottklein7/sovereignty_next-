@@ -6,12 +6,13 @@ import Link from 'next/link'
 
 const useStyles = createStyles((theme) => ({
     header: {
-        backgroundColor: theme.colors[theme.primaryColor][2],
+        backgroundColor: '#5C2E2B',
         borderBottom: 0,
-        height: 65,
+        height: 70,
         width: "100%",
         zIndex: 100,
-        position: 'absolute'
+        position: 'sticky',
+        top: 0,
     },
 
     dropdown: {
@@ -24,7 +25,7 @@ const useStyles = createStyles((theme) => ({
         borderTopLeftRadius: 0,
         borderTopWidth: 0,
         overflow: 'hidden',
-        background: theme.colors[theme.primaryColor][2],
+        background: "#5C2E2B",
         [theme.fn.largerThan('sm')]: {
             display: 'none',
         },
@@ -33,8 +34,8 @@ const useStyles = createStyles((theme) => ({
     inner: {
         height: 70,
         display: 'flex',
-        justifyContent: 'space-between',
         alignItems: 'center',
+        justifyContent: 'right'
     },
 
     links: {
@@ -101,42 +102,43 @@ export function Nav() {
     })
 
     return (
-        <Header height={65} className={classes.header}>
-            <Container>
-                <div className={classes.inner}>
-                    <Link href="/">
-                        <a>
-                            <Image
-                                src="/navlogosovfarms.png"
-                                alt="Soveringty Farms Navigation Logo"
-                                width={160}
-                                height={60}
-                            />
-                        </a>
-                    </Link>
-                    <Group spacing={5} className={classes.links}>
-                        {items}
-                    </Group>
-                    <Burger
-                        opened={opened}
-                        onClick={() => toggleOpened(!opened)}
-                        className={classes.burger}
-                        size="sm"
-                        color="#fff"
+        <>
+            <Header height={70} className={`${classes.header} font-cinzel`}>
+                <Container>
+                    <div className={classes.inner}>
+                        <Group spacing={5} className={classes.links}>
+                            {items}
+                        </Group>
+                        <Burger
+                            opened={opened}
+                            onClick={() => toggleOpened(!opened)}
+                            className={classes.burger}
+                            size="sm"
+                            color="#fff"
+                        />
+                        <Transition transition="pop-top-right" duration={200} mounted={opened}>
+                            {(styles) => (
+                                <Paper className={classes.dropdown} style={styles}>
+                                    {items}
+                                </Paper>
+                            )}
+                        </Transition>
+                    </div>
+                </Container>
+                <div className='hidden md:block'>
+
+                    <Image
+                        className='opacity-80'
+                        src="/barn.jpeg"
+                        alt="Soveringty Farms Navigation Logo"
+                        width={191}
+                        height={121}
                     />
-                    <Transition transition="pop-top-right" duration={200} mounted={opened}>
-                        {(styles) => (
-                            <Paper className={classes.dropdown} style={styles}>
-                                {items}
-                            </Paper>
-                        )}
-                    </Transition>
                 </div>
-            </Container>
-        </Header>
+            </Header>
+        </>
     )
 }
 function useBooleanToggle(arg0: boolean): [any, any] {
     throw new Error('Function not implemented.');
 }
-

@@ -106,10 +106,10 @@ export function Nav() {
 
     return (
         <>
-            <Header height={70} className={`${classes.header} font-cinzel`}>
+            <Header height={70} className={`${classes.header} cinzel`}>
                 <Container>
                     <div className={classes.inner}>
-                        <h1 className='text-white font-nanum-brush text-3xl md:hidden'>
+                        <h1 className='text-white nanum-brush text-3xl md:hidden'>
                             <Link href="/">
                                 <a>
                                     Sov Farms

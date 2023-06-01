@@ -62,17 +62,17 @@ export default function index({ posts }: Props) {
         <section className='p-10 md:hidden w-full' style={{ backgroundImage: 'url("/barn.jpeg")', backgroundSize: 'cover' }}>
           <div className="bg-[#292A2C] bg-opacity-80 flex flex-col justify-center items-center p-2">
             <div className='text-white flex flex-col gap-10 text-center border-2 w-full text-xl'>
-              <span className='font-nanum-brush text-3xl'>Sovereignty Barn</span>
-              <span className='font-cinzel flex justify-center italic font-extrabold text-xl'>
+              <span className='nanum-brush text-3xl'>Sovereignty Barn</span>
+              <span className='cinzel flex justify-center italic font-extrabold text-xl'>
                 Where Couples become Families
               </span>
-              <span className='font-nanum-brush cursive text-3xl'>Located In beautiful Mount Jackson Virginia</span>
+              <span className='nanum-brush cursive text-3xl'>Located In beautiful Mount Jackson Virginia</span>
             </div>
           </div>
         </section>
 
 
-        <section className='flex flex-col md:flex-row font-cinzel'>
+        <section className='flex flex-col md:flex-row cinzel'>
           <div className='w-full md:w-1/2'>
             <div className='relative h-0' style={{ paddingBottom: '56.25%' }}>
               <Image
@@ -102,7 +102,7 @@ export default function index({ posts }: Props) {
         </section>
 
         <section className="p-10 flex justify-center" style={{ backgroundImage: 'url("/weddingimg.webp")', backgroundSize: 'cover' }}>
-          <div className="bg-black bg-opacity-40 p-5 rounded-md font-cinzel">
+          <div className="bg-black bg-opacity-40 p-5 rounded-md cinzel">
             <div className="flex flex-col p-10 gap-5 md:text-center text-white">
               <h1 className="font-bold text-4xl text-center">Contact Us</h1>
               <p className="text-2xl font-bold">Curious about our farm? Want to visit? Have a question about our products?</p>
@@ -119,19 +119,19 @@ export default function index({ posts }: Props) {
                   <label className="block text-white font-bold" htmlFor="yourname">
                     Your Name:
                   </label>
-                  <input className="font-cinzel shadow-sm border border-gray-300 rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring" required={true} type="text" name="name" id="yourname" placeholder="John Doe" />
+                  <input className="cinzel shadow-sm border border-gray-300 rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring" required={true} type="text" name="name" id="yourname" placeholder="John Doe" />
                 </p>
                 <p>
                   <label className="block text-white font-bold" htmlFor="youremail">
                     Your Email:
                   </label>
-                  <input className="font-cinzel shadow-sm border border-gray-300 rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring" name="email" required={true} type="email" id="youremail" placeholder="robert@sovfarms.com" />
+                  <input className="cinzel shadow-sm border border-gray-300 rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring" name="email" required={true} type="email" id="youremail" placeholder="robert@sovfarms.com" />
                 </p>
                 <p>
                   <label className="block text-white font-bold" htmlFor="yourmessage">
                     What can we do for you?
                   </label>
-                  <textarea className="font-cinzel shadow-sm border border-gray-300 rounded py-2 px-3 mt-1 block w-full form-textarea outline-none required focus:ring" name="message" id="yourmessage" placeholder="I would love to visit your farm!"></textarea>
+                  <textarea className="cinzel shadow-sm border border-gray-300 rounded py-2 px-3 mt-1 block w-full form-textarea outline-none required focus:ring" name="message" id="yourmessage" placeholder="I would love to visit your farm!"></textarea>
                 </p>
                 <p className="mt-3">
                   <button className="w-full shadow bg-emerald-400 hover:bg-emerald-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded cursor-pointer" type="submit">Send</button>

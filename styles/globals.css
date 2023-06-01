@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.cinzel {
+    font-family: 'Cinzel', sans-serif;
+}
+
+.nanum-brush {
+    font-family: 'Nanum Brush Script', sans-serif;
+    
+}

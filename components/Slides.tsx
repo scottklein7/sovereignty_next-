@@ -47,11 +47,11 @@ function Slides() {
                   <img className="w-full" src={fadeImage.url} alt="" />
                   <div className="hidden md:flex absolute w-2/5 h-1/7 top-2/3 bg-[#292A2C] bg-opacity-80 flex-col justify-center items-center p-2">
                     <div className='sm: flex items-center text-white flex-col gap-10 text-center border-2 w-full text-xl'>
-                      <span className='font-nanum-brush text-3xl'>Soveringty Barn</span>
-                      <span className='font-cinzel flex justify-center italic font-extrabold text-xl'>
+                      <span className='nanum-brush text-3xl'>Soveringty Barn</span>
+                      <span className='cinzel flex justify-center italic font-extrabold text-xl'>
                         Where Couples become Families
                       </span>
-                      <span className='font-nanum-brush cursive text-3xl'>Located In beautiful Mount Jackson Virginia</span>
+                      <span className='nanum-brush cursive text-3xl'>Located In beautiful Mount Jackson Virginia</span>
                     </div>
                   </div>
                 </div>

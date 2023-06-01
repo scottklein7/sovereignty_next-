@@ -35,7 +35,10 @@ const useStyles = createStyles((theme) => ({
         height: 70,
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'right'
+        [theme.fn.largerThan('sm')]: {
+            justifyContent: 'right'
+        },
+        justifyContent: 'space-between'
     },
 
     links: {
@@ -74,7 +77,7 @@ const links2 = [
     { label: "Blog", link: "/blog" },
     { label: "Contact", link: "/contact" },
     { label: "Wedding Photos", link: "/weddingphotos" },
-    { label: "Wedding Consults", link: "https://calendly.com/sovereigntyfarms/wedding-venue-meeting?month=2023-01", target: "blank" }
+    { label: "Wedding Consults", link: "/https://calendly.com/sovereigntyfarms/wedding-venue-meeting", target: "blank" }
 ]
 
 export function Nav() {
@@ -106,6 +109,13 @@ export function Nav() {
             <Header height={70} className={`${classes.header} font-cinzel`}>
                 <Container>
                     <div className={classes.inner}>
+                        <h1 className='text-white font-nanum-brush text-3xl md:hidden'>
+                            <Link href="/">
+                                <a>
+                                    Sov Farms
+                                </a>
+                            </Link>
+                        </h1>
                         <Group spacing={5} className={classes.links}>
                             {items}
                         </Group>
@@ -126,14 +136,17 @@ export function Nav() {
                     </div>
                 </Container>
                 <div className='hidden md:block'>
-
-                    <Image
-                        className='opacity-80'
-                        src="/barn.jpeg"
-                        alt="Soveringty Farms Navigation Logo"
-                        width={191}
-                        height={121}
-                    />
+                    <Link href="/">
+                        <a>
+                            <Image
+                                className='opacity-80'
+                                src="/barn.jpeg"
+                                alt="Soveringty Farms Navigation Logo"
+                                width={191}
+                                height={121}
+                            />
+                        </a>
+                    </Link>
                 </div>
             </Header>
         </>
@@ -142,3 +155,4 @@ export function Nav() {
 function useBooleanToggle(arg0: boolean): [any, any] {
     throw new Error('Function not implemented.');
 }
+

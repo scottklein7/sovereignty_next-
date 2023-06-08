@@ -75,6 +75,7 @@ interface Props {
 
 const links2 = [
     { label: "Blog", link: "/blog" },
+    { label: "About", link: "/about" },
     { label: "Contact", link: "/contact" },
     { label: "Wedding Photos", link: "/weddingphotos" },
     { label: "Wedding Consults", link: "/https://calendly.com/sovereigntyfarms/wedding-venue-meeting", target: "blank" }

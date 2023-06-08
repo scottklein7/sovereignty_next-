@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import { Nav } from '../components/Nav'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 function about() {
     return (

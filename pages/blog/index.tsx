@@ -15,7 +15,7 @@ export default function index({ posts }: Props) {
     return (
         <>
             <Nav />
-            <main className="bg-sky-200 h-screen mt-10">
+            <main className="bg-sky-200 h-screen">
                 <section className="font-serif p-5 flex flex-col items-center">
                     <div className="flex flex-col p-10 gap-5 md:text-center">
                         <h1 className="font-extrabold text-4xl text-center">Val In The Valley</h1>

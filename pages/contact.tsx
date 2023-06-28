@@ -8,7 +8,7 @@ function Contact() {
             <Nav />
             <div className="flex items-center justify-center flex-col">
                 <div className="flex items-center justify-center h-96 w-full hello" style={{ backgroundImage: 'url(/walkingfield.webp)', backgroundSize: 'cover' }}>
-                    <h2 className="font-cinzel text-4xl text-white text-center">Host Your Dream Wedding</h2>
+                    <h2 className="cinzel text-4xl text-white text-center">Host Your Dream Wedding</h2>
                 </div>
                 <div className="w-full bg-emerald-50">
                     <div className="text-center bg-sky-100 w-full p-20 text-gray-300 font-extrabold">
@@ -38,7 +38,7 @@ function Contact() {
                                 </label>
                             </p>
                             <p>
-                                <label className="block font-cinzel text-black font-bold" htmlFor="yourname">
+                                <label className="block cinzel text-black font-bold" htmlFor="yourname">
                                     Your Name:
                                 </label>
                                 <input
@@ -51,7 +51,7 @@ function Contact() {
                                 />
                             </p>
                             <p>
-                                <label className="block font-cinzel text-black font-bold" htmlFor="youremail">
+                                <label className="block cinzel text-black font-bold" htmlFor="youremail">
                                     Your Email:
                                 </label>
                                 <input
@@ -64,7 +64,7 @@ function Contact() {
                                 />
                             </p>
                             <p>
-                                <label className="block font-cinzel text-black font-bold" htmlFor="yourmessage">
+                                <label className="block cinzel text-black font-bold" htmlFor="yourmessage">
                                     What can we do for you?
                                 </label>
                                 <textarea

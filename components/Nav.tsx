@@ -78,7 +78,7 @@ const links2 = [
     { label: "About", link: "/about" },
     { label: "Contact", link: "/contact" },
     { label: "Wedding Photos", link: "/weddingphotos" },
-    { label: "Wedding Consults", link: "/https://calendly.com/sovereigntyfarms/wedding-venue-meeting", target: "blank" }
+    { label: "Wedding Consults", link: "https://calendly.com/sovereigntyfarms/wedding-venue-meeting", target: "blank" }
 ]
 
 export function Nav() {

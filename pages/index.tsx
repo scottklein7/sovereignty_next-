@@ -103,8 +103,8 @@ export default function index({ posts }: Props) {
         </section>
 
         <section className="p-10 flex flex-col justify-center items-center text-center bg-gray-100">
-          <h3 className="p-10 font-cinzel text-2xl text-gray-800">DISCOVER THE SERENITY OF SOVEREIGNTY FARMS IN MOUNT JACKSON, VA</h3>
-          <p className="font-nanum-brush text-xl text-gray-600">
+          <h3 className="p-10 cinzel text-2xl text-gray-800">DISCOVER THE SERENITY OF SOVEREIGNTY FARMS IN MOUNT JACKSON, VA</h3>
+          <p className="nanum-brush text-xl text-gray-600">
             Nestled on 25 acres of picturesque countryside, complete with a charming historic barn and a commitment to organic farming, Sovereignty Farms invites you to experience the beauty and tranquility of Virginia's renowned Shenandoah Valley.
           </p>
           <Link href={"/contact"}>

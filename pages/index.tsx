@@ -102,11 +102,20 @@ export default function index({ posts }: Props) {
           </div>
         </section>
 
-        <section className="p-10 flex justify-center" style={{ backgroundImage: 'url("/weddingimg.webp")', backgroundSize: 'cover' }}>
-          <Contact />
+        <section className="p-10 flex flex-col justify-center items-center text-center bg-gray-100">
+          <h3 className="p-10 font-cinzel text-2xl text-gray-800">DISCOVER THE SERENITY OF SOVEREIGNTY FARMS IN MOUNT JACKSON, VA</h3>
+          <p className="font-nanum-brush text-xl text-gray-600">
+            Nestled on 25 acres of picturesque countryside, complete with a charming historic barn and a commitment to organic farming, Sovereignty Farms invites you to experience the beauty and tranquility of Virginia's renowned Shenandoah Valley.
+          </p>
+          <Link href={"/contact"}>
+            <a>
+              <button className="cinzel mt-8 text-lg px-6 py-3 bg-white text-green-800 font-bold rounded-full hover:bg-green-900 hover:text-white transition-colors duration-300">Get In Touch</button>
+            </a>
+          </Link>
         </section>
 
-        <section className="font-serif p-5 flex flex-col items-center bg-sky-100">
+
+        <section className="cinzel p-5 flex flex-col items-center bg-sky-100">
           <h2 className="text-center font-extrabold text-4xl md:text-5xl py-10">Val in the Valley Blog</h2>
           <Fade duration={1700} triggerOnce>
             <div className="flex flex-col bg-sky-50 items-center mx-auto justify-center hover:ease-in-out w-4/5 gap-5 md:gap-6 p-2 md:p-6 hover:shadow-lg hover:transition-transform duration-500 ease-in-out">

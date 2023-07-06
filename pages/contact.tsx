@@ -8,10 +8,10 @@ function Contact() {
             <Nav />
             <div className="flex items-center justify-center flex-col">
                 <div className="flex items-center justify-center h-96 w-full hello" style={{ backgroundImage: 'url(/walkingfield.webp)', backgroundSize: 'cover' }}>
-                    <h2 className="cinzel text-4xl text-white text-center">Host Your Dream Wedding</h2>
+                    <h2 className="font-cinzel text-4xl text-white text-center">Host Your Dream Wedding</h2>
                 </div>
-                <div className="w-full bg-emerald-50">
-                    <div className="text-center bg-sky-100 w-full p-20 text-gray-300 font-extrabold">
+                <div className="w-full bg-gray-50">
+                    <div className="text-center bg-[#FFFEFE] w-full p-20 text-slate-700 font-extrabold">
                         <h1 className="cinzel text-5xl mt-10 drop-shadow-2xl">Contact Us</h1>
                         <p className="text-4xl font-bold mt-4 nanum-brush drop-shadow-2xl">
                             Curious about our farm? Want to visit?
@@ -25,7 +25,7 @@ function Contact() {
                             <Image src={'/pallet.webp'} objectFit='cover' width="400px" height="500px" />
                         </div>
                         <form
-                            className="flex flex-col gap-3 md:w-1/2 justify-center"
+                            className="flex flex-col gap-3 md:w-1/2 justify-center text-slate-800"
                             name="contact"
                             method="POST"
                             data-netlify="true"
@@ -38,7 +38,7 @@ function Contact() {
                                 </label>
                             </p>
                             <p>
-                                <label className="block cinzel text-black font-bold" htmlFor="yourname">
+                                <label className="block font-cinzel font-bold" htmlFor="yourname">
                                     Your Name:
                                 </label>
                                 <input
@@ -51,7 +51,7 @@ function Contact() {
                                 />
                             </p>
                             <p>
-                                <label className="block cinzel text-black font-bold" htmlFor="youremail">
+                                <label className="block font-cinzel font-bold" htmlFor="youremail">
                                     Your Email:
                                 </label>
                                 <input
@@ -64,7 +64,7 @@ function Contact() {
                                 />
                             </p>
                             <p>
-                                <label className="block cinzel text-black font-bold" htmlFor="yourmessage">
+                                <label className="block font-cinzel font-bold" htmlFor="yourmessage">
                                     What can we do for you?
                                 </label>
                                 <textarea

@@ -66,7 +66,6 @@ const weddingphotos = ({ weddingImages }: Props) => {
 
 
 
-
     const openModal = (image: weddingImage) => {
         setSelectedImage(image);
         setModalIsOpen(true);
@@ -75,6 +74,7 @@ const weddingphotos = ({ weddingImages }: Props) => {
     const closeModal = () => {
         setSelectedImage(null);
         setModalIsOpen(false);
+        console.log('first')
     };
 
     return (
@@ -84,7 +84,7 @@ const weddingphotos = ({ weddingImages }: Props) => {
             </Head>
             <Nav />
             <main className="bg-sky-50 flex-col w-screen min-h-screen">
-                <h1 className="text-center font-bold text-3xl text-slate-500 drop-shadow-lg p-10 cinzel">Our Wedding Venue</h1>
+                <h1 className="text-center font-bold text-3xl text-slate-500 drop-shadow-lg p-10 cinzel">Our Barn Events</h1>
                 <section className="grid grid-cols-1 sm:grid-cols-4 ">
                     {weddingImages?.images?.map((image: weddingImage) => (
                         <div key={image._key} className="mx-5 sm:mx-1 aspect-w-1 p-3 aspect-h-1  overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
@@ -113,7 +113,7 @@ const weddingphotos = ({ weddingImages }: Props) => {
 export default weddingphotos
 
 export const getServerSideProps = async () => {
-    const query = `*[_type == "imageGallery"][1]{
+    const query = `*[_type == "imageGallery"][0]{
         title,
         _id,
         images,

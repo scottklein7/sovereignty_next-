@@ -1,10 +1,20 @@
 import Image from 'next/image';
 import { Nav } from '../components/Nav';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 
 function Contact() {
     return (
         <>
+            <Head>
+                <title>Contact | Sovereignty Farms</title>
+                <meta name="description" content="Contact Sovereignty Farms to learn more about our sustainable farm, grass-fed meat, pastured duck eggs, chicken eggs, organic produce, and our picturesque historic barn wedding venue. We would love to answer your questions and host your dream wedding!" />
+                <meta name="keywords" content="Contact, Sovereignty Farms, Sustainable Farming, Grass-Fed Meat, Pastured Duck Eggs, Chicken Eggs, Organic Produce, Historic Barn Wedding Venue, Farm Visits" />
+                <meta property="og:title" content="Contact | Sovereignty Farms" />
+                <meta property="og:description" content="Contact Sovereignty Farms to learn more about our sustainable farm, grass-fed meat, pastured duck eggs, chicken eggs, organic produce, and our picturesque historic barn wedding venue. We would love to answer your questions and host your dream wedding!" />
+                <meta property="og:image" content="/pallet.webp" />
+            </Head>
+
             <Nav />
             <div className="flex items-center justify-center flex-col">
                 <div className="flex items-center justify-center h-96 w-full hello" style={{ backgroundImage: 'url(/walkingfield.webp)', backgroundSize: 'cover' }}>

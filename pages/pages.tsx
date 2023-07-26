@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import React from 'react'
 import { Nav } from '../components/Nav'
 import Footer from '../components/Footer'
@@ -10,14 +9,6 @@ function about() {
     const router = useRouter()
     return (
         <>
-            <Head>
-                <title>About | Sovereignty Farms</title>
-                <meta name="description" content="Learn about Sovereignty Farms - a sustainable farm passionate about grass-fed meat, pastured duck eggs, chicken eggs, and organic produce. Explore our mission and sustainable farming practices. Host your dream wedding in our historic 100-year-old barn surrounded by the picturesque beauty of Sovereignty Farms. Contact us for more information." />
-                <meta name="keywords" content="Sovereignty Farms, About Us, Sustainable Farming, Grass-Fed Meat, Pastured Duck Eggs, Chicken Eggs, Organic Produce, Historic Barn Wedding Venue" />
-                <meta property="og:image" content="/barn.jpeg" />
-            </Head>
-
-
             <Nav />
             <main className="min-h-screen bg-[#E4EEDF] nanum-brush">
                 <section className="relative py-36 bg-cover bg-center" style={{ backgroundImage: 'url("/flower.webp")' }}>

@@ -51,7 +51,10 @@ export default function index({ posts }: Props) {
   return (
     <>
       <Head>
-        <title>Soveringty Farms | Local Grass Fed Beef | Northern Virginia | Shenandoah Valley Virginia</title>
+        <title>Sovereignty Farms | Grass Fed Meat, Pastured Duck Eggs, Chicken Eggs, Organic Produce, and Wedding Venue | Northern Virginia & Shenandoah Valley</title>
+        <meta name="description" content="Sovereignty Farms offers a picturesque wedding venue in a 100-year-old barn, providing local grass-fed beef, pastured duck eggs, chicken eggs, and organic produce an hour away from Northern Virginia in the beautiful Shenandoah Valley." />
+        <meta name="keywords" content="Sovereignty Farms, Grass Fed Meat, Pastured Duck Eggs, Chicken Eggs, Organic Produce, Wedding Venue, Wedding Barn, Shenandoah Valley Virginia, Northern Virginia" />
+        <meta property="og:image" content="/navlogosovfarms.webp" />
       </Head>
 
       <Nav />

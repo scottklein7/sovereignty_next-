@@ -46,7 +46,7 @@ const ModalContent: React.FC<{ selectedImage: weddingImage | null; closeModal: (
                         //@ts-ignore
                         ...imgUrl(selectedImage.asset._ref)
                         }
-                        alt="Selected Wedding Photo"
+                        alt="Barn Weeding Photo"
                     />
                 </button>
             )}
@@ -80,7 +80,11 @@ const weddingphotos = ({ weddingImages }: Props) => {
     return (
         <div className="" style={{ height: "100vh" }}>
             <Head>
-                <title>Wedding Photos for Sov Farms</title>
+                <title>Wedding Photos | Sovereignty Farms</title>
+                <meta
+                    name="description"
+                    content="Explore the barn events at Sovereignty Farms. Host your dream event in our historic 100-year-old barn surrounded by picturesque beauty."
+                />
             </Head>
             <Nav />
             <main className="bg-sky-50 flex-col w-screen min-h-screen">

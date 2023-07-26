@@ -80,7 +80,11 @@ const weddingphotos = ({ weddingImages }: Props) => {
     return (
         <div className="" style={{ height: "100vh" }}>
             <Head>
-                <title>Wedding Photos for Sov Farms</title>
+                <title>Wedding Venue Photos | Sovereignty Farms</title>
+                <meta
+                    name="description"
+                    content="Step into a world of enchantment with our captivating wedding venue photos at Sovereignty Farms. Immerse yourself in the beauty of nature and celebrate your dream wedding in our historic 100-year-old barn, surrounded by picturesque vistas and unforgettable memories."
+                />
             </Head>
             <Nav />
             <main className="bg-sky-50 flex-col w-screen min-h-screen">

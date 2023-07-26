@@ -14,8 +14,6 @@ function about() {
                 <title>About | Sovereignty Farms</title>
                 <meta name="description" content="Learn about Sovereignty Farms - a sustainable farm passionate about grass-fed meat, pastured duck eggs, chicken eggs, and organic produce. Explore our mission and sustainable farming practices. Host your dream wedding in our historic 100-year-old barn surrounded by the picturesque beauty of Sovereignty Farms. Contact us for more information." />
                 <meta name="keywords" content="Sovereignty Farms, About Us, Sustainable Farming, Grass-Fed Meat, Pastured Duck Eggs, Chicken Eggs, Organic Produce, Historic Barn Wedding Venue" />
-                <meta property="og:title" content="About | Sovereignty Farms" />
-                <meta property="og:description" content="Learn about Sovereignty Farms - a sustainable farm passionate about grass-fed meat, pastured duck eggs, chicken eggs, and organic produce. Explore our mission and sustainable farming practices. Host your dream wedding in our historic 100-year-old barn surrounded by the picturesque beauty of Sovereignty Farms. Contact us for more information." />
                 <meta property="og:image" content="/barn.jpeg" />
             </Head>
 
